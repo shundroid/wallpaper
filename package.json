@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yusukeendou/wallpaper/issues"
   },
-  "homepage": "https://github.com/yusukeendou/wallpaper#readme"
+  "homepage": "https://github.com/yusukeendou/wallpaper#readme",
+  "dependencies": {
+    "ffi": "^2.2.0"
+  }
 }
