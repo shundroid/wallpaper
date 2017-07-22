@@ -4,16 +4,19 @@ var BrowserWindow = electron.BrowserWindow;
 
 var mainWindow = null;
 
-app.dock.hide();
+if (process.platform === "darwin") {
+  app.dock.hide();
+}
 
 app.on("window-all-closed", function() {
   if (process.platform !== "darwin") app.quit();
 });
 
 app.on("ready", function() {
+  var screen = electron.screen.getPrimaryDisplay().workAreaSize;
   mainWindow = new BrowserWindow({
-    width: 1680,
-    height: 1050,
+    width: screen.width,
+    height: screen.height,
     type: "desktop",
     frame: false
   });
