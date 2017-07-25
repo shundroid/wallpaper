@@ -17,11 +17,12 @@ app.on("ready", function() {
   mainWindow = new BrowserWindow({
     width: screen.width,
     height: screen.height,
-    type: "desktop",
     frame: false
   });
   mainWindow.setPosition(0, 0);
   mainWindow.loadURL("file://" + __dirname + "/index.html");
+  var wallpaper = require("setup-wallpaper");
+  wallpaper.start();
 
   mainWindow.on("closed", function() {
     mainWindow = null;

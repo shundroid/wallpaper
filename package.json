@@ -16,7 +16,8 @@
     "url": "https://github.com/yusukeendou/wallpaper/issues"
   },
   "homepage": "https://github.com/yusukeendou/wallpaper#readme",
-  "dependencies": {
-    "ffi": "^2.2.0"
+  "devDependencies": {
+    "electron-rebuild": "^1.5.11",
+    "setup-wallpaper": "shundroid/setup-wallpaper"
   }
 }
