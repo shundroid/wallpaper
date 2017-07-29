@@ -21,6 +21,7 @@ app.on("ready", function() {
   });
   mainWindow.setPosition(0, 0);
   mainWindow.loadURL("file://" + __dirname + "/index.html");
+
   var wallpaper = require("setup-wallpaper");
   wallpaper.start();
 
